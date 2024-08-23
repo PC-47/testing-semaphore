@@ -1,0 +1,8 @@
+---
+- name: Debug output of a passed survey variable
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Output the survey variable value
+      debug:
+        msg: "The value of the survey variable is: {{ my_var }}"
