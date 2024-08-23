@@ -5,3 +5,8 @@
   tasks:
     - name: Execute a shell command
       shell: "ping -c 4 {{ target_host }}"
+      register: ping_output
+
+    - name: Ouput ping result
+      debug:
+        msg: "The ping output was: {{ ping_output.stdout }}"
