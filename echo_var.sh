@@ -7,5 +7,5 @@
 # echo "SEMAPHORE_string is set to: ${SEMAPHORE_string}"
 
 for var in "${@}"; do
-  echo "${var}
+  echo "${var}"
 done
