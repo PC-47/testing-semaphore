@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $# -ne 0 ]]; then
+if [[ -z ${SEMAPHORE_ip} ]]; then
     echo "incorrect number of arguments given to script"
     exit 0
 fi
