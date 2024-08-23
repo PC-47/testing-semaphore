@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Output all environment variables for debugging
-# env
+env
 
 # Output the specific survey variable
 # echo "SEMAPHORE_string is set to: ${SEMAPHORE_string}"
