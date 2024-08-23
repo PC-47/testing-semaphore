@@ -1,6 +1,7 @@
 ---
-- name: Ping a single host
-  hosts: "{{ target_host }}"
+- name: Run a shell command on localhost
+  hosts: localhost
+  gather_facts: no
   tasks:
-    - name: Ping the host
-      ping:
+    - name: Execute a shell command
+      shell: "ping -c 4 {{ target_host }}"
