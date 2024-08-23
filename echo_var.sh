@@ -6,4 +6,4 @@
 # Output the specific survey variable
 # echo "SEMAPHORE_string is set to: ${SEMAPHORE_string}"
 
-echo "survey string var is set to -> {{ string }}"
+echo "survey string var is set to -> {{ survey_string }}"
